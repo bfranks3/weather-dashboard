@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Better Weather Channel</title>
 </head>
 <body>
-    <header>
-
+    <div class="row no-gutters">
+    <header class="col-12 bg-light text-dark sticky-top d-flex flex-column p-1">
+        <h1 class="text-center">Better Weather Channel</h1>
     </header>
+</div>
     <!--left column-->
     <div class="row">
         <aside class="col-4" >
@@ -17,13 +20,13 @@
                 <h4>Search for a City</h4>
                 <input id="citySearch" type = "text" class = "input" placeholder="Enter City Name"/>
                 <br>
-                <button class = "btn btn-primary m-3" type = "submit" id="searchBtn">Search</button>
+                <button class = "btn btn-primary" type = "submit" id="searchBtn">Search</button>
             </div>
-            <div id="searchedCity" class=" city-nav border col ">
+            <div id="searchedCity" class="city-nav">
             </div>
         </aside>
-    <!--top right column-->
-    <!--bottom right column-->
+    </div>    
+    <!--right column--> 
 </body>
 <script src="./assets/js/script.js"></script>
 </html>
