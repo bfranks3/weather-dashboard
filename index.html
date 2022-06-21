@@ -15,40 +15,45 @@
         <h1 class="text-center">Better Weather Channel</h1>
     </header>
 </div>
-    <!--left column-->
-    <div class="row">
-        <aside class="col-4" >
-            <div class = "border p-4" id = "city-form">
-                <h4>Search for a City</h4>
-                <input id="citySearch" type = "text" class = "input" placeholder="Enter City Name"/>
-                <br>
-                <button class = "btn btn-primary" type = "submit" id="searchBtn">Search</button>
+    <main>
+        <div class="row no-gutters bg-primary d-flex justify-content-end">
+            <div id="search-col" class="col-12 col-md-3 p-2 border">
+                <h3 class="card-header text-center">Search For a City:</h3>
+                <form id="city-search" class="card-body">
+                    <label class="form-label" for="username">City:</label>
+                    <input name="cityname" id="city-name" type="text" autofocus="true" class="form-control" />
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-secondary m-2 w-75 text-center">Search</button></div>
+                </form>
             </div>
-            <div id="searchedCity" class="city-nav">
+
+            <div id="current-weather" class="col-12 col-md-9 p-3 border">
+                <div class="row d-flex">
+                    <h3 class="col-12 m-2" id="current-city-name"></h3>
+                    <span class="col-12 m-2" id="current-temp"></span>
+                    <span class="col-12 m-2" id="current-wind"></span>
+                    <span class="col-12 m-2" id="current-humidity"></span>
+                    <div class="row col-12 m-2">
+                        <span class="" id="current-uv"></span>
+                        <span class="" id="current-uv-color"></span>
+                    </div>
+                </div>
             </div>
-        </aside>
-    </div>    
-    <!--right column--> 
-    <div id="current-weather" class="col-12 col-md-9 p-3 border">
-        <div class="row d-flex">
-            <h3 class="col-12 m-2" id="current-city-name"></h3>
-            <span class="col-12 m-2" id="current-temp"></span>
-            <span class="col-12 m-2" id="current-wind"></span>
-            <span class="col-12 m-2" id="current-humidity"></span>
-            <div class="row col-12 m-2">
-                <span class="" id="current-uv"></span>
-                <span class="" id="current-uv-color"></span>
+            <div id="saved-box" class="col-12 col-md-3 p-2 border">
+
+            </div>
+
+            <div id="five-day-forecast" class="col-12 col-md-9 border">
+                <h4 class="col-12 p-3">5-day Forecast:</h4>
+                <div class="row mb-3 justify-content-center" id="forecast-cards">
+
+                </div>
+
             </div>
         </div>
-    </div>
-    <div id="saved-box" class="col-12 col-md-3 p-2 border">
 
-    </div>
-    <div id="five-day-forecast" class="col-12 col-md-9 border">
-        <h4 class="col-12 p-3">5-day Forecast:</h4>
-        <div class="row mb-3 justify-content-center" id="forecast-cards">
-    </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+
 </body>
-<script href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></script>
-<script src="./assets/js/script.js"></script>
 </html>
